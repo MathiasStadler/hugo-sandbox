@@ -1,0 +1,8 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/bloc/content/pagination.html -->" |safeHTML}}
+{{ if gt $.Paginator.TotalPages 1 }}
+<nav>
+  <ul class="pagination">
+    {{ partial "modules/site/pagination.html" . }}
+  </ul>
+</nav>
+{{ end }}

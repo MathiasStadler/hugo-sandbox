@@ -1,0 +1,4 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/site/footline.html -->" |safeHTML}}
+{{ with .Site.Params.footline }}
+  {{ . | markdownify }}
+{{ end }}

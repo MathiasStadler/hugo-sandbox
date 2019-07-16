@@ -1,0 +1,4 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/site/copyright.html -->" |safeHTML}}
+{{ with .Site.Copyright }}
+  {{ . | markdownify }}
+{{ end }}

@@ -1,0 +1,6 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/bloc/header/brand_topline.html -->" |safeHTML}}
+{{ if ne .Site.Params.topline "" }}
+<div class="container topline">
+  {{ partial "modules/site/topline.html" . }}
+</div>
+{{ end }}

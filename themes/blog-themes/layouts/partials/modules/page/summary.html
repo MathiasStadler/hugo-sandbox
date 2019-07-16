@@ -1,0 +1,8 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/page/summary.html -->" |safeHTML}}
+{{ if .IsPage }}
+  {{ if .Description }}
+    {{ .Description | markdownify }}
+  {{ else }}
+    {{ .Summary }}
+  {{ end }}
+{{ end }}

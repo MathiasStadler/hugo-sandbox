@@ -1,2 +1,4 @@
-public/*
-resources/*
+**/public/*
+**/resources/*
+**/.sass-cache/
+**/.DS_Store

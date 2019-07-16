@@ -1,0 +1,6 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/page/title.html -->" |safeHTML}}
+{{ if .IsPage }}
+{{ if .Draft }}
+{{ .Site.Data.Strings.draft }} :: {{ end }}
+{{ end }}
+{{ .Title }}

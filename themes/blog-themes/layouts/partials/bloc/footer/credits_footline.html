@@ -1,0 +1,6 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/bloc/footer/credits_footline.html -->" |safeHTML}}
+{{ if ne .Site.Params.footline "" }}
+<div class="container footline">
+    <small>{{ partial "modules/site/footline.html" . }}</small>
+</div>
+{{ end }}

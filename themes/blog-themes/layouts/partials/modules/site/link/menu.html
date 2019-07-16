@@ -1,0 +1,4 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/site/link/menu.html -->" |safeHTML}}
+{{ range .Site.Data.Menu }}
+<a href="{{ .URL | absLangURL }}"{{ if and ( isset . "Title" ) ( ne .Title "" ) }} title="{{ .Title }}"{{ end }}>{{ .Name }}</a>
+{{ end }}

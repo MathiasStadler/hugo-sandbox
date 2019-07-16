@@ -1,0 +1,6 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/page/link/title.html -->" |safeHTML}}
+<a href="{{ .Permalink }}">
+    {{ if .IsPage }}
+    {{ if .Draft }}
+    {{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}
+    {{ .Title }}</a>

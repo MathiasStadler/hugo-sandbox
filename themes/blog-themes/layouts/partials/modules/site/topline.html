@@ -1,0 +1,4 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/site/topline.html -->" |safeHTML}}
+{{ with .Site.Params.topline }}
+  {{ . | markdownify }}
+{{ end }}

@@ -1,0 +1,5 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/site/link/home.html -->" |safeHTML}}
+{{ $baseurl := .Site.BaseURL }}
+{{ with .Site.Params.home }}
+<a class="homelink" href="{{ $baseurl }}">{{ . }}</a>
+{{ end }}

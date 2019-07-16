@@ -1,0 +1,7 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/page/tags.html -->" |safeHTML}}
+{{ if isset .Params "tags"}}
+  <i class="fa fa-tags"></i>
+  {{ range .Params.tags }}
+  <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}" class="label label-primary">{{ . }}</a>
+  {{ end }}
+{{ end }}

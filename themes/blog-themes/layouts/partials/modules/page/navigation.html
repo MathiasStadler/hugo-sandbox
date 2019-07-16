@@ -1,0 +1,24 @@
+{{ "<!-- hugo enter:  .//themes/hugo-bootstrap-premium/layouts/partials/modules/page/navigation.html -->" |safeHTML}}
+{{ if .IsPage }}
+  {{ if or ( .NextInSection ) ( .PrevInSection ) }}
+    <nav><ul class="pager">
+    {{ if .PrevInSection }}
+        <li class="previous">
+          <a href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.Title }}">
+              {{ .PrevInSection.Title }}&nbsp;<span aria-hidden="true">&larr;</span>&nbsp;{{ i18n "previous" }}<br />
+              <div style="font-size: 69%;" >{{ .PrevInSection.Params.subtitle }}</div>
+          </a>
+        </li>
+    {{end}}
+
+    {{ if .NextInSection }}
+      <li class="next">
+        <a href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.Title }}">
+            {{ i18n "next" }}&nbsp;<span aria-hidden="true">&rarr;</span>&nbsp{{ .NextInSection.Title }}<br />
+            <div style="font-size: 69%;" >{{ .NextInSection.Params.subtitle }}</div>
+        </a>
+      </li>
+    {{end}}
+    </ul> </nav>
+  {{ end }}
+{{ end }}
