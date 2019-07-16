@@ -1,0 +1,5 @@
+{{ "<!-- hugo enter:  .//debug.html -->" |safeHTML}}
+{{ if .Site.Params.debug }}
+{{ "<!-- hugo: enter skeleton/partials/banner.html -->" | safeHTML }}
+{{ "<!-- hugo: enter " | safeHTML }}{{ .TemplateName }} {{ " -->" | safeHTML }}
+    {{ end }}
