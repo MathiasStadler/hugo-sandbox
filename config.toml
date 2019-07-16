@@ -171,12 +171,12 @@ weight = 2
 identifier = "post"
 url = "/post/"
 
-[[Languages.en.menu.main]]
-name = "About"
-weight = 1
-identifier = ""
-url = "/about/"
-pre = "<i class='fa fa-road'></i>"
+# [[Languages.en.menu.main]]
+# name = "About"
+# weight = 1
+# identifier = ""
+# url = "/about/"
+# pre = "<i class='fa fa-road'></i>"
 
 # [[Languages.en.menu.main]]
 # name = "Dashboard"
@@ -185,18 +185,31 @@ pre = "<i class='fa fa-road'></i>"
 # url = "https://appernetic.io/app/"
 
 [[Languages.en.menu.footer]] # add  links to the bottom right corner.
-name = "Disclaimer"
+name = "get in touch"
 pre = "<i>&middot;</i>"
-identifier = "disclaimer"
+identifier = "kontakt"
 weight = 1
-url = "/disclaimer/"
+url = "/en/kontakt/"
 
 [[Languages.en.menu.footer]]
-name = "Test"
-identifier = "test"
-weight = 1
-url = "/test/"
+name = "imprint"
+pre = "<i>&middot;</i>"
+identifier = "impressum"
+weight = 2
+url = "/en/impressum"
 
+[[Languages.en.menu.footer]]
+name = "your data "
+pre = "<i>&middot;</i>"
+identifier = "datenschutz"
+weight = 3
+url = "/en/datenschutz"
+
+[[Languages.en.menu.footer]]
+name = "about me"
+identifier = "aboutme"
+weight = 4
+url = "/en/aboutme"
 
 # de start
 [Languages.de]
