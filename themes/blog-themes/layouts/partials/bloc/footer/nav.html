@@ -6,4 +6,18 @@
 {{ range .Site.Menus.footer }}
 <a href="{{ .URL | absLangURL }}">{{ .Name }}</a> {{ .Pre }}
 {{ end }}
+<!-- switch language -->
+{{ if eq .Site.Params.switchlang true }}
+
+           {{ range .Site.Menus.switchlang }}
+            <a href="javascript:changeLanguage('{{ .URL | markdownify }}');" {{ if ne .Name "" }}
+            title="{{ .Name }}" {{ end }}>
+              {{ .Pre }}
+              {{ .Name }}
+            </a>
+          {{ end }}
+           {{ end }}
+<!-- -->
+
+
 </div>
