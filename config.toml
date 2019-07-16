@@ -203,34 +203,40 @@ url = "/test/"
 languageCode = "de"
 weight = 20
 title = "Mathias Stadler" # Site title
-copyright = "(c) 2019 "
+copyright = "(c) 2019"
 
 [[Languages.de.menu.main]]
-name = "Bloggen"
+name = "Blog"
 pre = ""
 weight = 2
 identifier = "post"
 url = "/de/post/"
 
 [[Languages.de.menu.footer]]
+name = "Kontakt"
+identifier = "kontakt"
+weight = 1
+url = "/de/kontakt/"
+
+[[Languages.de.menu.footer]]
 name = "Impressum"
 pre = "<i>&middot;</i>"
 identifier = "impressum"
-weight = 1
+weight = 2
 url = "/de/impressum/"
 
 [[Languages.de.menu.footer]]
 name = "Datenschutz"
 pre = "<i>&middot;</i>"
 identifier = "datenschutz"
-weight = 2
+weight = 3
 url = "/de/datenschutz/"
 
 [[Languages.de.menu.footer]]
-name = "Kontakt"
-identifier = "kontakt"
-weight = 3
-url = "/de/kontakt/"
+name = "Über mich"
+identifier = "aboutme"
+weight = 4
+url = "/de/aboutme/"
 
 [Languages.de.taxonomies]
 tag = "Tag"
