@@ -2,7 +2,7 @@
 baseurl = "/"
 
 # Remark if you want to disable multilingual support.
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "de"
 
 log="true"
 logFile="hugo.log"
@@ -27,7 +27,8 @@ canonifyurls = true
 metaDataFormat = "toml"
 
 # Theme to use (located in /themes/THEMENAME/)
-theme = "hugo-bootstrap-premium"
+# theme = "hugo-bootstrap-premium"
+theme = "blog-themes"
 # Pagination
 paginate = 10
 paginatePath = "page"
