@@ -213,10 +213,24 @@ identifier = "post"
 url = "/de/post/"
 
 [[Languages.de.menu.footer]]
-name = "Name"
-identifier = "identify"
+name = "Impressum"
+pre = "<i>&middot;</i>"
+identifier = "impressum"
+weight = 1
+url = "/de/impressum/"
+
+[[Languages.de.menu.footer]]
+name = "Datenschutz"
+pre = "<i>&middot;</i>"
+identifier = "datenschutz"
 weight = 2
-url = "/de/vilkor/"
+url = "/de/datenschutz/"
+
+[[Languages.de.menu.footer]]
+name = "Kontakt"
+identifier = "kontakt"
+weight = 3
+url = "/de/kontakt/"
 
 [Languages.de.taxonomies]
 tag = "Tag"

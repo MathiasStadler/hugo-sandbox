@@ -8,5 +8,4 @@ tags =  ["value_1", "value_2"]
 
 Hugo is written in [Go][] with support for multiple platforms.
 
-deutsch
-
+english
